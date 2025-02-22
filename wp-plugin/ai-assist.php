@@ -39,19 +39,19 @@ define( 'AI_ASSIST_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-ai-assist-activator.php
+ * This action is documented in includes/Ai_Assist_Activator.php
  */
 function activate_ai_assist() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-ai-assist-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/Ai_Assist_Activator.php';
 	Ai_Assist_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-ai-assist-deactivator.php
+ * This action is documented in includes/Ai_Assist_Deactivator.php
  */
 function deactivate_ai_assist() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-ai-assist-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/Ai_Assist_Deactivator.php';
 	Ai_Assist_Deactivator::deactivate();
 }
 
@@ -62,7 +62,7 @@ register_deactivation_hook( __FILE__, 'deactivate_ai_assist' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-ai-assist.php';
+require plugin_dir_path( __FILE__ ) . 'includes/Ai_Assist.php';
 
 /**
  * Begins execution of the plugin.

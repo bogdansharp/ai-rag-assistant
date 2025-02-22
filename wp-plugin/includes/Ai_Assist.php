@@ -103,24 +103,24 @@ class Ai_Assist {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-ai-assist-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/Ai_Assist_Loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-ai-assist-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/Ai_Assist_i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-ai-assist-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/Ai_Assist_Admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-ai-assist-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/Ai_Assist_Public.php';
 
 		$this->loader = new Ai_Assist_Loader();
 
